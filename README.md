@@ -6,9 +6,10 @@
 ####  (3) CART算法使用“基尼指数”来选择划分属性，选择基尼值最小的属性作为划分属性.<br>
 
 ### 本次实验我的数据集如下所示：
-![image](https://github.com/Erikfather/Decision_tree-python/blob/master/%E6%95%B0%E6%8D%AE%E8%A1%A8.jpg)
  ##### 共分为四个属性特征：年龄段，有工作，有自己的房子，信贷情况;
  ##### 现根据这四种属性特征来决定是否给予贷款
+![image](https://github.com/Erikfather/Decision_tree-python/blob/master/%E6%95%B0%E6%8D%AE%E8%A1%A8.jpg)
+
 
  #### 为了方便，我对数据集进行如下处理：
 #### 在编写代码之前，我们先对数据集进行属性标注。
