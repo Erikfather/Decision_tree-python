@@ -27,7 +27,7 @@
 ##### （1）先将txt中数据读入数组，并打印出数据集长度，即共有多少条数据，并计算出起始信息熵Ent(D)，然后分别找出三种算法的首个最优特征索引
 ![image](https://github.com/Erikfather/Decision_tree-python/blob/master/pic_results/first_find_bset_Index.jpg)
 ##### （2）下面通过相应的最优划分属性分别创建相应的决策树，并对测试集进行测试，测试集如下：
-![image](https://github.com/Erikfather/Decision_tree-python/blob/master/testset.jpg)
+![image](https://github.com/Erikfather/Decision_tree-python/blob/master/testdata.jpg)
 
 #### 结果如下：
 ##### ID3算法:
