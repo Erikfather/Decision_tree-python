@@ -1,0 +1,13 @@
+digraph DI {
+    node1[label="color"]
+    node2[label="F", shape="box"]
+    node3[label="size"]
+    node4[label="F", shape="box"]
+    node5[label="T", shape="box"]
+
+    node1 -> node2[label="purple"]
+    node1 -> node3[label="yellow"]
+    node3 -> node4[label="large"]
+    node3 -> node5[label="small"]
+
+}
