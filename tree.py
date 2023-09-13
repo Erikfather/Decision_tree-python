@@ -30,7 +30,7 @@ def read_dataset(filename):
     for line in all_lines[0:]:
         line = line.strip().split(',')  # 以逗号为分割符拆分列表
         dataset.append(line)
-    return dataset, labels#这里的label是特征
+    return dataset, labels
 
 
 def read_testset(testfile):
@@ -56,10 +56,10 @@ def cal_entropy(dataset):
     labelCounts = {}
     # 给所有可能分类创建字典
     for featVec in dataset:
-        currentlabel = featVec[-1] #类别标签
+        currentlabel = featVec[-1] 
         if currentlabel not in labelCounts.keys():
             labelCounts[currentlabel] = 0
-        labelCounts[currentlabel] += 1# 各个类的总个数
+        labelCounts[currentlabel] += 1 
     Ent = 0.0
     for key in labelCounts:
         p = float(labelCounts[key]) / numEntries
@@ -227,7 +227,7 @@ def ID3_createTree(dataset, labels, test_dataset):
     if post_pruning:
         tree_output = classifytest(ID3Tree,
                                    featLabels=labels_for_post_pruning,
-                                   testDataSet=test_dataset)
+                                   testDataSet=test_dataset)# 这里传入的数据集的特征集合是变化后的，所以应该传入变化的特征集
         ans = []
         for vec in test_dataset:
             ans.append(vec[-1])
